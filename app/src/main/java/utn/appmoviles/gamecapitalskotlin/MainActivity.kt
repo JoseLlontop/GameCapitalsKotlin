@@ -69,7 +69,7 @@ fun PantallaInicio(navigationController: NavHostController?) {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(color = colorFondo)
+            .background(color = Color.White)
             .padding(16.dp),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
@@ -88,7 +88,7 @@ fun PantallaInicio(navigationController: NavHostController?) {
         Image(
             painter = painterResource(id = R.drawable.logo_facultad),
             contentDescription = "Logo Facultad",
-            modifier = Modifier.size(380.dp),
+            modifier = Modifier.size(360.dp),
             contentScale = ContentScale.FillBounds
         )
 
@@ -105,13 +105,13 @@ fun PantallaInicio(navigationController: NavHostController?) {
                 modifier = Modifier
                     .width(130.dp)
                     .height(45.dp))  {
-                Text(text = "Juego",
+                Text(text = "Juegar",
                     fontSize = 18.sp)
             }
             Button(onClick = { navigationController?.navigate(Routes.PantallaCapitals.route) },
-                modifier = Modifier.width(130.dp).height(45.dp),
+                modifier = Modifier.width(135.dp).height(45.dp),
                 colors = ButtonDefaults.buttonColors(containerColor = colorBoton)){
-                Text(text = "Capital",
+                Text(text = "Capital BD",
                     fontSize = 18.sp)
             }
         }
