@@ -1,5 +1,8 @@
 [versions]
 agp = "8.5.1"
+datastore = "1.1.1"
+datastorePreferences = "1.1.1"
+datastorePreferencesVersion = "1.1.1"
 kotlin = "1.9.0"
 coreKtx = "1.13.1"
 junit = "4.13.2"
@@ -12,7 +15,10 @@ navigationCompose = "2.7.7"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-datastore = { module = "androidx.datastore:datastore", version.ref = "datastore" }
 androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
+datastore-preferences = { module = "implementation.androidx.datastore:datastore-preferences", version.ref = "datastorePreferences" }
+implementation_androidx-datastore-preferences = { module = "implementation.androidx.datastore:datastore-preferences", version.ref = "datastorePreferencesVersion" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
