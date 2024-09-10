@@ -30,13 +30,13 @@ import utn.appmoviles.gamecapitalskotlin.ui.theme.colorTitulo
 
 @Preview(showBackground = true)
 @Composable
-fun MostrarPantallaCapitals() {
+fun MostrarPantallaAgregarCiudad() {
     val navigationController = rememberNavController()
     PantallaCapitals(navigationController= navigationController)
 }
 
 @Composable
-fun PantallaCapitals(navigationController: NavHostController) {
+fun PantallaAgregarCiudad(navigationController: NavHostController) {
     Column(Modifier
         .fillMaxSize()
         .background(color = Color.White)
@@ -70,7 +70,7 @@ fun PantallaCapitals(navigationController: NavHostController) {
 
         }
         Spacer(modifier = Modifier.height(5.dp))
-        Button(onClick = {navigationController.navigate(Routes.PantallaAgregarCiudad.route) },
+        Button(onClick = {navigationController.navigate(Routes.PantallaInicio.route) },
             colors = ButtonDefaults.buttonColors(containerColor = colorBoton),
             modifier = Modifier
                 .width(235.dp)
@@ -101,4 +101,8 @@ fun PantallaCapitals(navigationController: NavHostController) {
         }
     }
 }
+
+
+
+
 

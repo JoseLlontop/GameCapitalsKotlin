@@ -53,6 +53,8 @@ class MainActivity : ComponentActivity() {
                 composable(Routes.PantallaInicio.route) { PantallaInicio(navigationController) }
                 composable(Routes.PantallaGame.route) { PantallaGame(navigationController) }
                 composable(Routes.PantallaCapitals.route) { PantallaCapitals(navigationController) }
+                composable(Routes.PantallaAgregarCiudad.route) { PantallaAgregarCiudad(navigationController)
+                }
             }
         }
     }
